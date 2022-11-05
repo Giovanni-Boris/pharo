@@ -1,3 +1,6 @@
+"
+Class counter
+"
 Class {
 	#name : #Counter,
 	#superclass : #Object,
@@ -15,4 +18,14 @@ Counter >> count [
 { #category : #accessing }
 Counter >> count: value [ 
 	 count := value
+]
+
+{ #category : #API }
+Counter >> decrement [ 
+	count := count - 1
+]
+
+{ #category : #accessing }
+Counter >> increment [ 
+	count := count + 1
 ]
